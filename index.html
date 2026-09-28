@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AutoVerse | Explore the World of Cars</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="navbar">
+  <a class="logo" href="index.html">🚗 Auto<span>Verse</span></a>
+  <button class="menu-btn" onclick="toggleMenu()">☰</button>
+  <nav id="navMenu">
+    <a class="active" href="index.html">Home</a>
+    <a href="cars.html">Cars</a>
+    <a href="blogs.html">Blogs</a>
+    <a href="destinations.html">Destinations</a>
+    <a href="wallpapers.html">Wallpapers</a>
+    <a href="wishlist.html">❤️ Wishlist <b id="wishlistCount">0</b></a>
+    <a href="profile.html">Profile</a>
+    <a href="login.html" id="authLink">Login</a>
+    <button class="theme-btn" onclick="toggleTheme()">🌙</button>
+  </nav>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-content">
+    <p class="eyebrow">THE WORLD OF AUTOMOBILES</p>
+    <h1>Discover Cars That<br><span>Inspire Dreams.</span></h1>
+    <p>Explore iconic cars, read automotive stories, discover destinations and save your favourite cars.</p>
+    <div class="hero-buttons">
+      <a class="btn primary" href="cars.html">Explore Cars →</a>
+      <a class="btn secondary" href="blogs.html">Read Blogs</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <div><p class="eyebrow">FEATURED</p><h2>Iconic Cars</h2></div>
+    <a href="cars.html" class="text-link">View all →</a>
+  </div>
+  <div class="car-grid" id="featuredCars"></div>
+</section>
+
+<section class="section categories">
+  <p class="eyebrow">EXPLORE</p><h2>Browse by Category</h2>
+  <div class="category-grid">
+    <a href="cars.html?category=Supercar">🏎️<span>Supercars</span></a>
+    <a href="cars.html?category=JDM">🇯🇵<span>JDM</span></a>
+    <a href="cars.html?category=Luxury">💎<span>Luxury</span></a>
+    <a href="cars.html?category=Muscle">🔥<span>Muscle</span></a>
+    <a href="cars.html?category=Electric">⚡<span>Electric</span></a>
+    <a href="cars.html?category=Hypercar">🚀<span>Hypercars</span></a>
+  </div>
+</section>
+
+<section class="section blog-preview">
+  <div class="section-head"><div><p class="eyebrow">AUTOMOTIVE STORIES</p><h2>Latest Blogs</h2></div><a href="blogs.html" class="text-link">All blogs →</a></div>
+  <div class="blog-grid">
+    <article class="blog-card"><div class="blog-img gradient-red">🏁</div><div class="blog-body"><span>Performance</span><h3>Why the Nissan GT-R Became a JDM Legend</h3><p>Discover the story behind one of Japan's most famous performance cars.</p><a href="blog-details.html?id=gtr">Read article →</a></div></article>
+    <article class="blog-card"><div class="blog-img gradient-blue">⚡</div><div class="blog-body"><span>Technology</span><h3>How Electric Cars Are Changing the Automotive World</h3><p>From instant torque to intelligent software, the modern car is evolving.</p><a href="blog-details.html?id=ev">Read article →</a></div></article>
+    <article class="blog-card"><div class="blog-img gradient-dark">🏎️</div><div class="blog-body"><span>History</span><h3>Supercar vs Hypercar</h3><p>Understand the difference between two exciting classes of performance cars.</p><a href="blog-details.html?id=hyper">Read article →</a></div></article>
+  </div>
+</section>
+
+<section class="cta">
+  <div><p class="eyebrow">AUTOMOTIVE DESTINATIONS</p><h2>Travel Through the World of Cars.</h2><p>Explore famous automotive places and discover what enthusiasts can do there.</p></div>
+  <a class="btn primary" href="destinations.html">Explore Destinations →</a>
+</section>
+</main>
+<footer><div class="logo">🚗 Auto<span>Verse</span></div><p>Explore • Discover • Dream</p><p class="small">Academic Web Application Development Project</p></footer>
+<script src="js/data.js"></script><script src="js/app.js"></script>
+</body></html>
